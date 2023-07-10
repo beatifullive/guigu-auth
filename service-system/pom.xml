@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>guigu-auth</artifactId>
+        <groupId>com.atguigu</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service-system</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.atguigu</groupId>
+            <artifactId>service-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+<!--            &lt;!&ndash; Maven 安装插件，用于执行项目 A 的安装操作 &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-install-plugin</artifactId>-->
+<!--                <version>2.5.2</version>-->
+<!--                <executions>-->
+<!--                    &lt;!&ndash; 安装项目 A 的执行配置 &ndash;&gt;-->
+<!--                    <execution>-->
+<!--                        <id>install-project-a</id>-->
+<!--                        &lt;!&ndash; 在构建过程的 initialize 阶段执行安装操作 &ndash;&gt;-->
+<!--                        <phase>initialize</phase>-->
+<!--                        <goals>-->
+<!--                            &lt;!&ndash; 执行安装操作 &ndash;&gt;-->
+<!--                            <goal>install-file</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            &lt;!&ndash; 项目 A 的 JAR 文件路径 &ndash;&gt;-->
+<!--&lt;!&ndash;                            <file>${project.basedir}/path/to/project-a.jar</file>&ndash;&gt;-->
+<!--                            &lt;!&ndash; 项目 A 的 Maven 坐标信息 &ndash;&gt;-->
+<!--                            <groupId>com.atguigu</groupId>-->
+<!--                            <artifactId>model</artifactId>-->
+<!--                            <version>1.0</version>-->
+<!--                            <packaging>jar</packaging>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+        </plugins>
+    </build>
+</project>
